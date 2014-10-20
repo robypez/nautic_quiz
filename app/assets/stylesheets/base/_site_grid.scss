@@ -1,0 +1,19 @@
+body {
+  background-color: $blue;
+}
+
+.container {
+  @include outer-container;
+  margin: auto;
+  background-color: $white;
+}
+
+%header {
+  @include span-columns(12);
+}
+
+.content-wrapper {
+  @include span-columns(12);
+  padding: $gutter;
+}
+

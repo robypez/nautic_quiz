@@ -1,0 +1,21 @@
+.cards
+  - @section.each do |s|
+    .card
+      =link_to new_quiz_path(:section_id => s.id) do
+        .card-image
+          %img{:alt => "", :src => "https://raw.github.com/Magnus-G/Random/master/mountains.png"}
+        .card-header
+          = s.name
+        .card-copy
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+      .card-stats
+        %ul
+          %li
+            = s.questions.count
+            %span Domande
+          %li
+            = s.questions.error_count
+            %span Errori
+          %li
+            xxxx
+            %span Percentuale esatte

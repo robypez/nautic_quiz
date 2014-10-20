@@ -1,0 +1,14 @@
+%h2
+Quiz testtone
+
+- @quiz.questions.each do |q|
+  %h4= q.text
+  
+
+= simple_form_for @quiz do |form|
+  - @quiz.questions.each do |question|
+    = form.simple_fields_for :questions, question do |q|
+      - q.input_field :section_id
+      %h2= q.text
+    = form.submit 'Importa'
+    

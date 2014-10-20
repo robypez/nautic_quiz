@@ -1,0 +1,31 @@
+%header.navigation
+  .menu-wrapper
+    = link_to root_path do
+      = image_tag "logo.png", class: 'logo'
+    %p#js-mobile-menu.navigation-menu-button MENU
+    .nav
+      %ul#navigation-menu
+        %li.nav-link.more
+          %a{:href => "javascript:void(0)"} Sezioni
+          %ul.submenu
+            %li
+              %a{:href => "javascript:void(0)"} Teoria della vela
+            %li
+              %a{:href => "javascript:void(0)"} Motori endotermici
+            %li
+              %a{:href => "javascript:void(0)"} Sicurezza della navigazione
+            %li
+              %a{:href => "javascript:void(0)"} Segnalamento marittimo
+            %li
+              %a{:href => "javascript:void(0)"} Meteorologia
+            %li
+              %a{:href => "javascript:void(0)"} Navigazione
+            %li
+              %a{:href => "javascript:void(0)"} Normativa diportistica    
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} Simulazione Esame
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} Contatti
+        
+    .navigation-tools
+      %a.sign-up{:href => "javascript:void(0)"} Sign Up

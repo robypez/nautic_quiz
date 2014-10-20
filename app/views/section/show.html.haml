@@ -1,0 +1,9 @@
+%h2
+  =@section.name
+
+- @questions.each do |q|
+  %h6
+    =q.text
+  .answers
+    = render partial: "answers/answers", locals: {answers: q.answers}
+
